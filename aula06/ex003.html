@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <script>
+        //Usando o método Number.parseFloat
+        var n1 = Number(window.prompt("Digite um número: "))
+        var n2 = Number(window.prompt("Digite um segundo número: "))
+        var r = n1 + n2;
+
+        //concatenação  
+        //window.alert("O resultado da soma é : " + toString(r))
+
+        //Interpolação de Strings
+        window.alert(`A soma de ${n1} e ${n2} é : ${r}`)
+    </script>
+</body>
+
+</html>

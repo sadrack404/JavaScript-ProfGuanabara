@@ -1,0 +1,29 @@
+body{
+    background-color: darkcyan;
+    font: normal 15pt Times;
+    
+}
+
+header {
+    text-align: center;
+    color: whitesmoke;
+}
+
+section {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+div{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+    font-style: italic;
+    padding-top: 15px;
+}

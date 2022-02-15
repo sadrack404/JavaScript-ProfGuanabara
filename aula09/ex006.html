@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgba(255, 166, 0, 0.815);
+        }
+        h1 {
+            background-color: rgb(255, 255, 255);
+            color: rgb(4, 80, 90);
+            border-radius: 0.5em;
+            width: 10em;
+            text-align: center;
+        }
+        h2{
+            background-color: rgb(255, 255, 255);
+            color: rgb(4, 80, 90);
+            border-radius: 1em;
+            width: 20em,20em;
+            text-align: center;
+        }
+    </style>
+
+    <title>Meu primeiro programa</title>
+
+
+</head>
+
+<body>
+    <h1>DOM</h1>
+
+    <p id="txt">E continua a saga de aprendizagem...</p>
+    <p id="a">Hoje aprendemos sobre o DOM "Modelo de Documento por Objetos"</p>
+    
+    <h2>
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. </strong>
+        Repellendus nemo debitis impedit, laborum voluptatem officia sed delectus ea possimus, natus corporis?
+        Ipsam cumque culpa ducimus laborum laudantium obcaecati corrupti tenetur.
+    </h2>
+
+    <script>
+        //utilizando o JS podemos alterar por exemplo o estylo da página
+        //pelo ID
+        var p1 = window.document.getElementById('txt')
+        p1.style.backgroundColor= 'aqua';
+
+        //pelo nome da tag html "obs: repare no Elements, com o S no final, ele requer uma posição"
+        var p2 = window.document.getElementsByTagName('h2')[0]
+        p2.style.backgroundColor='#33FD73';
+        
+       var x = window.document.getElementsByTagName('h1')[0]
+       x.innerText = "Modelo de Documento por Objetos";
+
+       //por seletor
+       var y = window.document.querySelector('p#a')
+        y.style.backgroundColor='red';
+       
+    </script>
+
+</body>
+
+</html>

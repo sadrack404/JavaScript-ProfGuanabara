@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+</head>
+
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+
+    <div id=resposta> O resultado é: ??? </div>
+
+    <script>
+
+        /**
+         *  Primeiramente criamos uma variavel para manipulado 
+            o botão e o texto de apresentação de resposta
+         *  
+         *  Criamos a função somar()
+         * Dentro dela colocamos uma variavel para capturar as respostas contidas nos INPUTS do HTML
+         * Criamos mais duas variaveis que recebem esses valores. Obs: Capturamos esse valor usando o método Number(r1.value)
+         */
+
+        var botao = window.document.querySelector("div#BotaoResultado")
+        var resp = window.document.querySelector("div#resposta")
+
+        function somar() {
+            var r1 = window.document.querySelector("input#txtn1")
+            var r2 = window.document.querySelector("input#txtn2")
+            var s1 = Number(r1.value)
+            var s2 = Number(r2.value)
+            resp.innerHTML = `O resultado é: ${s1 + s2}`
+        }
+    </script>
+</body>
+
+</html>
